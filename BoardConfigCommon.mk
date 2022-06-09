@@ -143,9 +143,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
-# NFC
-TARGET_USES_NQ_NFC := true
-
 # Partitions
 
 ifneq ($(WITH_GMS),true)
