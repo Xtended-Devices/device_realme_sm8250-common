@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
+# Oplus Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -310,6 +314,23 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml
+
+# Oplus Camera
+$(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/misc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
+    $(LOCAL_PATH)/configs/permissions/com.oplus.camera.unit.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-appplatform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus-appplatform.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oplus-camera.xml \
+    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
+
+# Oplus-fwk
+PRODUCT_PACKAGES += \
+    oplus-fwk.lahaina
+
+PRODUCT_BOOT_JARS += \
+    oplus-fwk.lahaina
 
 # OMX
 PRODUCT_PACKAGES += \
