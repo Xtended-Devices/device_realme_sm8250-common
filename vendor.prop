@@ -94,6 +94,8 @@ vendor.qcom.bluetooth.soc=hastings
 
 # Camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,org.telegram.plus,tw.nekomimi.nekogram
+vendor.camera.algo.jpeghwencode=0
+vendor.camera.aux.packagelist=com.oplus.camera
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
