@@ -35,8 +35,8 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
 # Oplus Settings
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    DeviceSettings
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -323,6 +323,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/com.oplus.camera.unit.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-appplatform.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus-appplatform.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus-camera.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-oplus-camera.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-googleCamera-Wichaya8.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-googleCamera-Wichaya8.xml \
     $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
 
 # Oplus-fwk
