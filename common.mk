@@ -334,7 +334,9 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     OPlusTetheringResCommon \
-    WifiResTarget
+    WifiResTarget \
+    SettingsLibOverlay \
+    SystemUIOverlay
 
 # Partition
 PRODUCT_BUILD_SUPER_PARTITION := false
