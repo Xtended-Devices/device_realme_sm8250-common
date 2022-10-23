@@ -312,7 +312,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml
 
 # Oplus Camera
-$(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
+#$(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/misc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
@@ -358,7 +358,8 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResCommon \
     OPlusTetheringResCommon \
     WifiResTarget \
-    SettingsLibOverlay
+    SettingsLibOverlay \
+    SystemUIOverlay
 
 # Partition
 PRODUCT_BUILD_SUPER_PARTITION := false
