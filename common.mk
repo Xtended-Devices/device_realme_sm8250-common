@@ -293,6 +293,9 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
+# Media
+GENERIC_ODM_IMAGE := true
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
