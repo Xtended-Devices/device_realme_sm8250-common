@@ -30,10 +30,6 @@ $(call inherit-product, vendor/realme/sm8250-common/sm8250-common-vendor.mk)
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
-# Oplus Settings
-#PRODUCT_PACKAGES += \
-#    DeviceSettings
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -136,10 +132,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libstdc++.vendor
 
-PRODUCT_PACKAGES += \
-    Camera2 \
-    GcamGo  \
-    GcamWichaya
+PRODUCT_PACKAGES += Camera2
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -325,9 +318,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml
 
-# Oplus Camera
-#$(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/misc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
     $(LOCAL_PATH)/configs/permissions/com.oplus.camera.unit.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.oplus.camera.unit.sdk.xml \
@@ -354,11 +344,6 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libstagefrighthw
-
-# OPlusExtras
-PRODUCT_PACKAGES += \
-    OPlusExtras \
-    tri-state-key-calibrate
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
