@@ -326,13 +326,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-googleCamera-Wichaya8.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-googleCamera-Wichaya8.xml \
     $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
 
-# Oplus-fwk
-PRODUCT_PACKAGES += \
-    oplus-fwk.lahaina
-
-PRODUCT_BOOT_JARS += \
-    oplus-fwk.lahaina
-
 # OMX
 PRODUCT_PACKAGES += \
     init.qti.media.sh \
