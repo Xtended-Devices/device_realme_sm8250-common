@@ -1107,6 +1107,11 @@ vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
 
+# Dolby from RUI F.02
+odm/lib64/soundfx/libswdap_v3_6.so
+odm/lib64/soundfx/libswgamedap_v3_6.so
+odm/lib64/soundfx/libozoprocessing.so
+
 # DPM
 system_ext/bin/dpmd
 system_ext/bin/tcmd
