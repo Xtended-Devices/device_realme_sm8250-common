@@ -2,3 +2,11 @@ libAPSClient-jni.qti.so
 libAncHumBokeh-jni.qti.so
 libApsFaceBeautyPreviewJni.qti.so
 libjnistblur_api.qti.so
+libbinauralrenderer_wrapper.qti.so
+libhoaeffects.qti.so
+libupdateprof.qti.so
+libQOC.qti.so
+libthermalclient.qti.so
+libdiag_system.qti.so
+libqape.qti.so
+liblistenjni.qti.so
